@@ -15,7 +15,8 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "deploy": "git add . && git commit -m Heroku && git push heroku"
   },
   "keywords": [],
   "author": "",
