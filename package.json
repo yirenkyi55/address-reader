@@ -16,8 +16,7 @@
   },
   "scripts": {
     "start": "ts-node src/app.ts",
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "deploy": "git add . && git commit -m Heroku && git push heroku"
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "keywords": [],
   "author": "",
