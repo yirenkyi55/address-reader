@@ -1,8 +1,6 @@
 import axios from 'axios';
-import config from 'config';
 
-const etherApiKey = config.get<string>('etherApiKey');
-
+const etherApiKey = process.env.ETHER_API_KEY;
 const ethereum = axios.create({
   params: {
     apiKey: etherApiKey,

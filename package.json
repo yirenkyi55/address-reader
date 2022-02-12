@@ -15,7 +15,7 @@
     "typescript": "^4.5.5"
   },
   "scripts": {
-    "start": "node build/src/app.js",
+    "start": "node dist/src/app.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "build": "tsc"
   },
@@ -26,6 +26,7 @@
     "axios": "^0.24.0",
     "config": "^3.3.7",
     "dayjs": "^1.10.7",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "lodash": "^4.17.21",
     "pino": "^7.6.3",

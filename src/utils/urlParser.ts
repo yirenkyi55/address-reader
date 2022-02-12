@@ -1,18 +1,17 @@
 import { SupportedPlatforms } from '../models';
-import config from 'config';
 
-export const getPlatformBaseUrl = (platform: SupportedPlatforms) => {
+export const getPlatformBaseUrl = (platform: SupportedPlatforms): string => {
   switch (platform) {
     case SupportedPlatforms.EtherMainNet:
-      return config.get<string>('etherMainnet');
+      return process.env.ETHER_MAIN_NET!;
     case SupportedPlatforms.EtherGoerli:
-      return config.get<string>('etherGoerli');
+      return process.env.ETHER_GOERLI!;
     case SupportedPlatforms.EtherKovan:
-      return config.get<string>('etherKovan');
+      return process.env.ETHER_KOVAN!;
     case SupportedPlatforms.EtherRinkeby:
-      return config.get<string>('etherRinkeby');
+      return process.env.ETHER_RINKEBY!;
     case SupportedPlatforms.EtherRopsten:
-      return config.get<string>('etherRopsten');
+      return process.env.ETHER_ROPSTEN!;
     default:
       throw new Error('Unsupported platform');
   }

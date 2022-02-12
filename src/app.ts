@@ -1,16 +1,17 @@
 import express, { Request, Response } from 'express';
-import config from 'config';
 import swaggerUI from 'swagger-ui-express';
+import 'dotenv/config';
 
 import docs from './docs';
 import logger from './utils/logger';
 import etherRouter from './routes/ether';
 
-const port = config.get<number>('port');
+const port = process.env.PORT;
 const app = express();
 
 app.use(express.json());
 
+console.log(process.env);
 app.get('/', (req: Request, res: Response) => {
   return res.status(200).send({ message: 'API is up and running!' });
 });
