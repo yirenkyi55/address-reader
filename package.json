@@ -7,7 +7,7 @@
     "start": "node dist/app.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
-    "buid": "tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "Emmanuel Yirenkyi <yirenemma@gmail.com>",
