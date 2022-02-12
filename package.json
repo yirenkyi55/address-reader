@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/src/app.js",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc"
+    "postinstall": "tsc",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
   "author": "Emmanuel Yirenkyi <yirenemma@gmail.com>",
@@ -36,7 +37,8 @@
     "typescript": "^4.5.5"
   },
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "8.x"
   },
   "repository": "https://github.com/yirenkyi55/address-reader.git"
 }
