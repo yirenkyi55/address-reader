@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emmanuel Yirenkyi <yirenemma@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
@@ -38,5 +38,6 @@
   "engines": {
     "node": "16.x",
     "yarn": "1.x"
-  }
+  },
+  "repository": "https://github.com/yirenkyi55/address-reader.git"
 }
