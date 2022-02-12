@@ -1,6 +1,6 @@
-import config from 'config';
+import 'dotenv/config';
 
-const port = config.get<number>('port');
+const port = process.env.PORT;
 const apiServers = {
   servers: [
     {
