@@ -16,8 +16,7 @@
   },
   "scripts": {
     "start": "node dist/src/app.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "build": "tsc"
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "keywords": [],
   "author": "",
